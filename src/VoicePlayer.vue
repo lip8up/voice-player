@@ -53,15 +53,15 @@ export default class VoicePlayer extends Vue {
   startAnimate() {
     this.animate = requestInterval(() => {
       this.step = (this.step + 1) % 3
-    }, 400)
+    }, 400, () => {
+      this.step = 2
+    })
   }
 
   stopAnimate() {
     this.animate && this.animate.clear()
     this.animate = null
-    this.$nextTick(() => {
-      this.step = 2
-    })
+    this.step = 2
   }
 }
 </script>

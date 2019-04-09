@@ -87,13 +87,6 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "416f":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
 /***/ "8bbf":
 /***/ (function(module, exports) {
 
@@ -378,14 +371,21 @@ exports.mixins = mixins;
 
 /***/ }),
 
-/***/ "d24c":
+/***/ "ccc4":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_10_oneOf_1_0_node_modules_css_loader_index_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VoicePlayer_vue_vue_type_style_index_0_id_3d077c78_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("416f");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_10_oneOf_1_0_node_modules_css_loader_index_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VoicePlayer_vue_vue_type_style_index_0_id_3d077c78_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_10_oneOf_1_0_node_modules_css_loader_index_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VoicePlayer_vue_vue_type_style_index_0_id_3d077c78_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_10_oneOf_1_0_node_modules_css_loader_index_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VoicePlayer_vue_vue_type_style_index_0_id_11e81914_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ea94");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_10_oneOf_1_0_node_modules_css_loader_index_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VoicePlayer_vue_vue_type_style_index_0_id_11e81914_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_10_oneOf_1_0_node_modules_css_loader_index_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VoicePlayer_vue_vue_type_style_index_0_id_11e81914_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_10_oneOf_1_0_node_modules_css_loader_index_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VoicePlayer_vue_vue_type_style_index_0_id_3d077c78_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_10_oneOf_1_0_node_modules_css_loader_index_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VoicePlayer_vue_vue_type_style_index_0_id_11e81914_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "ea94":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -408,12 +408,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"553e40dc-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VoicePlayer.vue?vue&type=template&id=3d077c78&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"553e40dc-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VoicePlayer.vue?vue&type=template&id=11e81914&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"voice-player",on:{"click":_vm.toggle}},[_c('i',{class:("trumpet" + _vm.step)}),(_vm.duration > 0)?_c('em',[_vm._v(_vm._s(_vm.duration)+"\"")]):_vm._e(),_c('audio',{ref:"audio",staticClass:"audio",attrs:{"src":_vm.url,"preload":"metadata"},on:{"loadedmetadata":_vm.metaLoaded,"ended":_vm.ended}})])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/VoicePlayer.vue?vue&type=template&id=3d077c78&scoped=true&
+// CONCATENATED MODULE: ./src/VoicePlayer.vue?vue&type=template&id=11e81914&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/tslib/tslib.es6.js
 /*! *****************************************************************************
@@ -757,7 +757,7 @@ function isPromise(obj) {
 
 // CONCATENATED MODULE: ./src/util.ts
 // https://css-tricks.com/snippets/javascript/replacements-setinterval-using-requestanimationframe/
-function requestInterval(callback, delay) {
+function requestInterval(callback, delay, onEnd) {
     var nextFrame = window.requestAnimationFrame;
     var start = Date.now();
     var stop;
@@ -766,7 +766,7 @@ function requestInterval(callback, delay) {
             start = Date.now();
             callback();
         }
-        stop || nextFrame(tick);
+        stop ? (onEnd && onEnd()) : nextFrame(tick);
     };
     nextFrame(tick);
     return {
@@ -826,15 +826,14 @@ var VoicePlayervue_type_script_lang_ts_VoicePlayer = /** @class */ (function (_s
         var _this = this;
         this.animate = requestInterval(function () {
             _this.step = (_this.step + 1) % 3;
-        }, 400);
-    };
-    VoicePlayer.prototype.stopAnimate = function () {
-        var _this = this;
-        this.animate && this.animate.clear();
-        this.animate = null;
-        this.$nextTick(function () {
+        }, 400, function () {
             _this.step = 2;
         });
+    };
+    VoicePlayer.prototype.stopAnimate = function () {
+        this.animate && this.animate.clear();
+        this.animate = null;
+        this.step = 2;
     };
     __decorate([
         Prop({ type: String })
@@ -848,8 +847,8 @@ var VoicePlayervue_type_script_lang_ts_VoicePlayer = /** @class */ (function (_s
 
 // CONCATENATED MODULE: ./src/VoicePlayer.vue?vue&type=script&lang=ts&
  /* harmony default export */ var src_VoicePlayervue_type_script_lang_ts_ = (VoicePlayervue_type_script_lang_ts_); 
-// EXTERNAL MODULE: ./src/VoicePlayer.vue?vue&type=style&index=0&id=3d077c78&lang=less&scoped=true&
-var VoicePlayervue_type_style_index_0_id_3d077c78_lang_less_scoped_true_ = __webpack_require__("d24c");
+// EXTERNAL MODULE: ./src/VoicePlayer.vue?vue&type=style&index=0&id=11e81914&lang=less&scoped=true&
+var VoicePlayervue_type_style_index_0_id_11e81914_lang_less_scoped_true_ = __webpack_require__("ccc4");
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -961,7 +960,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "3d077c78",
+  "11e81914",
   null
   
 )

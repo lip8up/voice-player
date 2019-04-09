@@ -1,5 +1,5 @@
 // https://css-tricks.com/snippets/javascript/replacements-setinterval-using-requestanimationframe/
-export function requestInterval(callback: () => any, delay: number) {
+export function requestInterval(callback: () => any, delay: number, onEnd?: () => any) {
   const nextFrame = window.requestAnimationFrame
 
   let start = Date.now()
@@ -9,7 +9,7 @@ export function requestInterval(callback: () => any, delay: number) {
       start = Date.now()
       callback()
     }
-    stop || nextFrame(tick)
+    stop ? (onEnd && onEnd()) : nextFrame(tick)
   }
   nextFrame(tick)
 
