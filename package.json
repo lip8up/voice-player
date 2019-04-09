@@ -1,6 +1,7 @@
 {
   "name": "voice-player",
-  "version": "1.3.0",
+  "version": "1.4.0",
+  "module": "dist/voice-player.umd.js",
   "main": "dist/voice-player.umd.js",
   "repository": {
     "type": "git",
