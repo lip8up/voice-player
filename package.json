@@ -1,6 +1,9 @@
 {
   "name": "voice-player",
-  "version": "1.6.0",
+  "version": "1.7.0",
+  "description": "Play voice with wechat voice ui styles",
+  "author": "lip2up",
+  "license": "MIT",
   "module": "dist/voice-player.umd.js",
   "main": "dist/voice-player.umd.js",
   "repository": {
