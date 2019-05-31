@@ -2,8 +2,14 @@
   <div class="voice-player" @click="toggle">
     <i :class="`trumpet${step}`"></i>
     <em v-if="duration > 0">{{duration}}"</em>
-    <audio :src="url" preload="metadata" class="audio"
-      @loadedmetadata="metaLoaded" @ended="ended" ref="audio"></audio>
+    <audio
+      :src="url"
+      preload="metadata"
+      class="audio"
+      @loadedmetadata="metaLoaded"
+      @ended="ended"
+      ref="audio"
+    ></audio>
   </div>
 </template>
 
@@ -11,46 +17,82 @@
 import { Component, Vue, Prop } from 'vue-property-decorator'
 import { requestInterval } from './util'
 
+const instanceList: VoicePlayer[] = []
+
 @Component
 export default class VoicePlayer extends Vue {
+  /**
+   * Voice audio source url
+   */
   @Prop({ type: String }) url!: string
 
-  step = 2
+  /**
+   * Uniqueness, only one voice can be played at a time, default is true
+   */
+  @Prop({ type: Boolean, default: true }) only!: boolean
 
-  duration = 0
+  public duration = 0
 
-  animate: { clear: () => any } | null = null
+  private step = 2
 
-  playing = false
+  private animate: { clear: () => any } | null = null
 
-  metaLoaded({ target }: any) {
-    this.duration = parseInt(target.duration, 10)
+  private playing = false
+
+  public get audio() {
+    return this.$refs.audio as HTMLAudioElement
   }
 
-  ended() {
-    this.pause()
+  constructor() {
+    super()
+    instanceList.push(this)
   }
 
-  mounted() {
-  }
-
-  toggle() {
+  /**
+   * Toggle play & pause
+   */
+  public toggle() {
     this.playing ? this.pause() : this.play()
   }
 
-  play() {
+  /**
+   * Play voice
+   */
+  public play() {
+    this.only && this.pauseAll()
+
     this.playing = true
     this.startAnimate()
-    ; (this.$refs.audio as HTMLAudioElement).play()
+    this.audio.play()
+    this.$emit('play')
   }
 
-  pause() {
+  /**
+   * Pause voice
+   */
+  public pause() {
     this.playing = false
     this.stopAnimate()
-    ; (this.$refs.audio as HTMLAudioElement).pause()
+    this.audio.pause()
+    this.$emit('pause')
   }
 
-  startAnimate() {
+  /**
+   * Pause all voices
+   */
+  public pauseAll() {
+    instanceList.forEach(it => it.pause())
+  }
+
+  private metaLoaded(ev: any) {
+    this.duration = parseInt(ev.target.duration, 10)
+  }
+
+  private ended() {
+    this.pause()
+  }
+
+  private startAnimate() {
     this.animate = requestInterval(() => {
       this.step = (this.step + 1) % 3
     }, 400, () => {
@@ -58,7 +100,7 @@ export default class VoicePlayer extends Vue {
     })
   }
 
-  stopAnimate() {
+  private stopAnimate() {
     this.animate && this.animate.clear()
     this.animate = null
     this.step = 2
